@@ -19,9 +19,11 @@ public:
 
 private slots:
     void on_image_input_folder_button_clicked();
+    void on_image_output_folder_button_clicked();
 
 private:
     Ui::MainWindow *ui;
+    void createFileHandler(QString filePath);
 };
 
 #endif // MAINWINDOW_H
