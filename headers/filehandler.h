@@ -8,6 +8,7 @@ class FileHandler
 {
 public:
     FileHandler(QString filePath);
+    void CollectAllFiles();
 
 private:
     QString filePath;

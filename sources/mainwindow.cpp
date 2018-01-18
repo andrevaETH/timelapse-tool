@@ -25,7 +25,7 @@ void MainWindow::on_image_input_folder_button_clicked() {
         ui->image_input_folder_label->setText(
                     input_folder_list[input_folder_list.size() -1]);
 
-        // input_file_handler(input_folder);
+        this->input_file_handler = new FileHandler(input_folder);
     }
 
 }
@@ -44,5 +44,6 @@ void MainWindow::on_image_output_folder_button_clicked() {
         ui->image_output_folder_label->setText(
                     output_folder_list[output_folder_list.size() - 1]);
 
+        this->output_file_handler = new FileHandler(output_folder);
     }
 }

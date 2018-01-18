@@ -7,3 +7,9 @@ FileHandler::FileHandler(QString filePath) {
     this->filePath = filePath;
 }
 
+void FileHandler::CollectAllFiles() {
+    /*
+     * Collect all files and store them in a list
+     */
+}
+
