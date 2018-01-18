@@ -5,6 +5,8 @@
 #include <QFileDialog>
 #include <QString>
 
+#include "filehandler.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -22,8 +24,11 @@ private slots:
     void on_image_output_folder_button_clicked();
 
 private:
+    // Members
     Ui::MainWindow *ui;
-    void createFileHandler(QString filePath);
+    FileHandler *input_file_handler;
+    FileHandler *output_file_handler;
+
 };
 
 #endif // MAINWINDOW_H

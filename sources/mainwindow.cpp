@@ -17,14 +17,17 @@ void MainWindow::on_image_input_folder_button_clicked() {
      */
     QFileDialog *file_dialog = new QFileDialog(this);
     file_dialog->show();
-    QString new_folder = file_dialog->directory().absolutePath();
-    QStringList new_folder_list = new_folder.split('/');
 
+    if(file_dialog->exec()) {
+        QString input_folder = file_dialog->directory().absolutePath();
+        QStringList input_folder_list = input_folder.split('/');
 
-    ui->image_input_folder_label->setText(
-                new_folder_list[new_folder_list.size() -1]);
+        ui->image_input_folder_label->setText(
+                    input_folder_list[input_folder_list.size() -1]);
 
-    createFileHandler(new_folder);
+        // input_file_handler(input_folder);
+    }
+
 }
 
 void MainWindow::on_image_output_folder_button_clicked() {
@@ -33,8 +36,13 @@ void MainWindow::on_image_output_folder_button_clicked() {
      */
     QFileDialog *file_dialog = new QFileDialog(this);
     file_dialog->show();
-    QString output_folder = file_dialog->directory().absolutePath();
 
-    if()
+    if(file_dialog->exec()) {
+        QString output_folder = file_dialog->directory().absolutePath();
+        QStringList output_folder_list = output_folder.split('/');
 
+        ui->image_output_folder_label->setText(
+                    output_folder_list[output_folder_list.size() - 1]);
+
+    }
 }
