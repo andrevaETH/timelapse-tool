@@ -1,0 +1,7 @@
+**TimeLapseTool
+
+This is a start to implement an easy to use tool for creating timelapse videos
+from images, as the solution from Lightroom CC is not suitable for:
+- Portrait images
+- No option to set resolution of timelapse, which usually cuts of part of the
+  image or very bad quality for 4:3
