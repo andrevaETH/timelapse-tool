@@ -3,6 +3,8 @@
 
 #include <QString>
 
+#include "dirent.h"
+
 
 class FileHandler
 {
@@ -12,6 +14,7 @@ public:
 
 private:
     QString filePath;
+    std::list<typename T> fileList;
 };
 
 #endif // FILEHANDLER_H
