@@ -2,6 +2,8 @@
 #define FILEHANDLER_H
 
 #include <QString>
+#include <QFile>
+#include <QImage>
 
 #include "dirent.h"
 
@@ -14,7 +16,7 @@ public:
 
 private:
     QString filePath;
-    std::list<typename T> fileList;
+    std::list<> fileList;
 };
 
 #endif // FILEHANDLER_H
