@@ -1,2 +1,5 @@
 .DS_Store
 TimeLapseTool.pro.user
+
+# Files which got produced by Qt
+*.pro.*

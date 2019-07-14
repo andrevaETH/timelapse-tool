@@ -4,19 +4,21 @@
 #include <QString>
 #include <QFile>
 #include <QImage>
+#include <QDir>
 
 #include "dirent.h"
+#include "programvariables.h"
 
 
 class FileHandler
 {
 public:
     FileHandler(QString filePath);
-    void CollectAllFiles();
+    void collectAllFiles();
 
 private:
-    QString filePath;
-    std::list<> fileList;
+    QDir filePath;
+    QStringList fileList;
 };
 
 #endif // FILEHANDLER_H

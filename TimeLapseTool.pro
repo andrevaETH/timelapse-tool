@@ -24,14 +24,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-    sources/main.cpp \
-    sources/mainwindow.cpp \
-    sources/filehandler.cpp
+    backend/ffmpeginterface.cpp \
+    main.cpp \
+    frontend/mainwindow.cpp \
+    backend/filehandler.cpp
 
 HEADERS += \
-    headers/mainwindow.h \
-    sources/filehandler.h \
-    headers/filehandler.h
+    backend/ffmpeginterface.h \
+    frontend/mainwindow.h \
+    backend/filehandler.h \
+    backend/programvariables.h
 
 FORMS += \
-    forms/mainwindow.ui
+    frontend/mainwindow.ui
+
+CONFIG +=sdk_no_version_check

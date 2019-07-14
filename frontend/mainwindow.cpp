@@ -1,10 +1,11 @@
-#include "headers/mainwindow.h"
+#include "frontend/mainwindow.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     ui(new Ui::MainWindow) {
     // Setup UI
     ui->setupUi(this);
+    this->setWindowTitle("TimeLapseTool");
 }
 
 MainWindow::~MainWindow() {
